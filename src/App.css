@@ -1,0 +1,79 @@
+body{
+  background-color: #1e1c1c;
+  color: #c8d2c8;
+}
+*{
+  box-sizing: border-box;
+}
+main{
+  max-width: 300px;
+  margin: 20px auto;
+}
+form{
+  border: 3px solid #363434;
+  border-radius: 10px;
+  padding: 4px;
+  display: flex;
+  
+}
+form input[type="text"] {
+  background: none;
+  border: 0 ;
+  padding: 0 9px;
+  display: block;
+  color: #c9c3c3;
+  width: 100%;
+}
+form button{
+  background-color: #00db00;
+  border: 0;
+  border-radius: 5px;
+  cursor: pointer;
+
+}
+div.task{
+  background-color: #363434;
+  border-radius: 10px;
+  padding: 5px 7px;
+  margin-top: 5px;
+  display: flex;
+  align-items: center;
+  transition: opacity .3s linear;
+  cursor: pointer;
+  transition: transform 0.3s;
+}
+div.task svg {
+  height: 15px;
+  margin-right: 5px;
+  fill:#00db00;
+}
+div.task.done{
+  opacity: 0.25;
+  text-decoration: line-through;
+}
+div.task-hovered.not-done {
+  transform: scale(1.05);
+}
+div.task-name{
+  flex-grow: 1;
+}
+h1, h3{
+  text-align: center;
+}
+button.trash{
+  background: none;
+  border: 0;
+  display: flex;
+  cursor: pointer;
+}
+button.trash svg {
+  fill: #1e1c1c;
+}
+div.checkbox{
+  display: flex;
+  align-items: center;
+}
+div.text{
+  display: flex;
+  align-items: center;
+}
